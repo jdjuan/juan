@@ -22,12 +22,12 @@ import { BirthdayComponent } from './birthday/birthday.component';
         component: ProfileComponent,
       },
       {
-        path: ':name',
-        component: BirthdayComponent,
-      },
-      {
         path: 'privacy-policy',
         component: PrivacyPolicyComponent,
+      },
+      {
+        path: ':name',
+        component: BirthdayComponent,
       },
     ]),
   ],
