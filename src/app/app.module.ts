@@ -1,22 +1,32 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { RouterModule } from "@angular/router";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-import { AppComponent } from "./app.component";
-import { ProfileComponent } from "./profile/profile.component";
-import { PrivacyPolicyComponent } from "./privacy-policy/privacy-policy.component";
+import { AppComponent } from './app.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { BirthdayComponent } from './birthday/birthday.component';
 
 @NgModule({
-  declarations: [AppComponent, ProfileComponent, PrivacyPolicyComponent],
+  declarations: [
+    AppComponent,
+    ProfileComponent,
+    PrivacyPolicyComponent,
+    BirthdayComponent,
+  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {
-        path: "",
+        path: '',
         component: ProfileComponent,
       },
       {
-        path: "privacy-policy",
+        path: ':name',
+        component: BirthdayComponent,
+      },
+      {
+        path: 'privacy-policy',
         component: PrivacyPolicyComponent,
       },
     ]),
