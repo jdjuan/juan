@@ -1,9 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~src/assets/_variables.scss';
 
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
 
-html, body, h1 {
+html {
+  background-color: white;
+}
+
+html,
+body,
+h1 {
   margin: 0;
+}
+
+body {
+  background-color: $primary;
+  color: $accent;
+}
+@media (min-width: 700px) {
+  body {
+    max-width: 32rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $accent;
+  &:active,
+  &:visited {
+    background-color: initial;
+  }
 }

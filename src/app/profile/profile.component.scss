@@ -1,8 +1,70 @@
+@import '~src/assets/_variables.scss';
+
 .container {
-    display: flex;
+  text-align: center;
+  .header {
+    padding-top: 1rem;
+    img {
+      width: 100%;
+      max-width: 10rem;
+      border: 7px solid $complement;
+      border-radius: 10rem;
+      box-shadow: 0 0px 30px -6px rgba(0, 0, 0, 0.4);
+      margin-bottom: 0.5rem;
+    }
+    .name {
+      font-size: 2rem;
+      background-color: $complement;
+      border-radius: 1rem;
+      padding: 7px 16px;
+      box-shadow: 0 0px 30px -6px rgba(0, 0, 0, 0.4);
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .content {
+    text-align: left;
+    margin: 3rem 1rem;
+    .link-container {
+      padding: 6px 11px 6px 10px;
+      border-radius: 0.6rem;
+      background-color: $complement;
+      display: flex;
+      align-items: baseline;
+      width: fit-content;
+      margin-bottom: 10px;
+      &:hover {
+        cursor: pointer;
+        background-color: yellow;
+      }
+      a {
+        margin-left: 8px;
+        .highlight {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .subscribe {
     text-align: center;
-    height: 80vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .text-field {
+      padding: 0px 7px;
+      margin: 0;
+      width: 12rem;
+      height: 2rem;
+      border-radius: 8px;
+      border: 0px solid;
+      outline: none;
+      color: $accent;
+    }
+    .subscribe-button {
+      color: $accent;
+      margin: 8px 0 2rem 0;
+      background-color: $complement2;
+      font-size: 1rem;
+      padding: 8px 67px;
+      border-radius: 10px;
+      border: 0px solid;
+    }
+  }
 }

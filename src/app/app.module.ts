@@ -25,9 +25,14 @@ import { BirthdayComponent } from './birthday/birthday.component';
         path: 'privacy-policy',
         component: PrivacyPolicyComponent,
       },
+      // {
+      //   path: ':name',
+      //   component: BirthdayComponent,
+      // },
       {
-        path: ':name',
-        component: BirthdayComponent,
+        path: '**',
+        redirectTo: '/',
+        pathMatch: 'full',
       },
     ]),
   ],
