@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --host 0.0.0.0",
-    "build": "ng build --prod && cpy 'docs/index.html' 'docs' --rename=404.html",
+    "build": "ng build --prod && cpy 'docs/index.html' 'docs' --rename=404.html && cpy 'CNAME' 'docs'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
