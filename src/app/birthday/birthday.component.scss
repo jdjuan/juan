@@ -21,7 +21,7 @@
   }
   p.small {
     font-size: 1.5rem;
-    &.strange{
+    &.strange {
       padding: 1rem 14rem;
     }
   }
@@ -36,26 +36,49 @@
   .underline {
     text-decoration: underline;
   }
+  .bold {
+    font-weight: bold;
+  }
 }
 
 .container1 {
-  background: linear-gradient(90deg, darken(#ffcbf2, 20) 0%, darken(#ecbcfd, 20) 100%);
+  background: linear-gradient(
+    90deg,
+    darken(#ffcbf2, 20) 0%,
+    darken(#ecbcfd, 20) 100%
+  );
 }
 .container2 {
-  background: linear-gradient(90deg, darken(#d0d1ff, 20) 0%, darken(#d8bbff, 29) 100%);
+  background: linear-gradient(
+    90deg,
+    darken(#d0d1ff, 20) 0%,
+    darken(#d8bbff, 29) 100%
+  );
 }
 .container3 {
-  background: linear-gradient(90deg, darken(#d0d1ff, 20) 0%, darken(#d8bbff, 29) 100%);
+  background: linear-gradient(
+    90deg,
+    darken(#d0d1ff, 20) 0%,
+    darken(#d8bbff, 29) 100%
+  );
 }
 .container4 {
   text-align: left;
-  background: linear-gradient(90deg, darken(#ffcbf2, 20) 0%, darken(#ecbcfd, 20) 100%);
+  background: linear-gradient(
+    90deg,
+    darken(#ffcbf2, 20) 0%,
+    darken(#ecbcfd, 20) 100%
+  );
   .title {
     font-weight: bold;
   }
 }
 .container5 {
-  background: linear-gradient(90deg, darken(#ffcbf2, 20) 0%, darken(#ecbcfd, 20) 100%);
+  background: linear-gradient(
+    90deg,
+    darken(#ffcbf2, 20) 0%,
+    darken(#ecbcfd, 20) 100%
+  );
 }
 
 @media only screen and (max-width: 1000px) {
@@ -72,7 +95,7 @@
     }
     p.small {
       font-size: 1.1rem;
-      &.strange{
+      &.strange {
         padding: initial;
       }
     }
