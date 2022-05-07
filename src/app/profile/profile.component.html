@@ -1,61 +1,34 @@
-<div class="container">
-  <div class="header">
-    <img src="assets/profile.png" alt="" />
-    <div class="name">Juan Herrera</div>
-  </div>
-  <div class="content">
-    <div class="link-container">
-      <span>🚬</span>
-      <a href="https://twitter.com/jdjuan/status/1320760929211002884" target="_blank">Dealing with <span class="highlight">Bad Habits</span></a>
-    </div>
-    <div class="link-container">
-      <span>🤝</span>
-      <a href="https://twitter.com/jdjuan/status/1299984661200941058" target="_blank">How to ask for <span class="highlight">Mentorship</span></a>
-    </div>
-    <div class="link-container">
-      <span>🌎</span>
-      <a href="https://twitter.com/jdjuan/status/1293112496505724929" target="_blank">Differences: <span class="highlight">Austria and
-          Colombia</span></a>
-    </div>
-    <div class="link-container">
-      <span>🎨</span>
-      <a href="https://twitter.com/jdjuan/status/1288466193968517126" target="_blank"><span class="highlight">Frontend</span> Desde Cero</a>
-    </div>
-    <div class="link-container">
-      <span>🎤</span>
-      <a href="https://twitter.com/jdjuan/status/1280868324973387778" target="_blank">How to do <span class="highlight">Public Speaking</span></a>
-    </div>
-    <div class="link-container">
-      <span>✈️</span>
-      <a href="https://twitter.com/jdjuan/status/1275028906115043333" target="_blank">Cómo Trabajar en el <span class="highlight">Exterior</span></a>
-    </div>
-    <div class="link-container">
-      <span>💻</span>
-      <a href="https://twitter.com/jdjuan/status/1276411410688413696" target="_blank"><span class="highlight">The Quiet Path</span> of Software</a>
-    </div>
-    <div class="link-container">
-      <span>👩‍💻</span>
-      <a href="https://twitter.com/jdjuan/status/1266715418212929536" target="_blank">Improve Your <span class="highlight">Development
-          Cycle</span></a>
-    </div>
-    <div class="link-container">
-      <span>💼</span>
-      <a href="https://twitter.com/jdjuan/status/1263440610893201408" target="_blank">How to Upgrade Your <span
-          class="highlight">Curriculum</span></a>
-    </div>
+<div class="h-screen w-full flex items-center pt-[10vh] flex-col bg-gradient-to-r from-indigo-500 to-purple-800 font-mono">
+  <div *ngFor="let link of links">
+    <a [href]="link.url" class="block p-5 text-white underline underline-offset-2 hover:font-semibold">{{ link.text }}</a>
   </div>
 
-  <div class="subscribe">
+  <div class="mt-10">
     <div id="mc_embed_signup">
-      <form action="https://jdjuan.us2.list-manage.com/subscribe/post?u=395582e416a0c357e50836500&amp;id=4a66f17d42" method="post"
-        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <form
+        action="https://jdjuan.us2.list-manage.com/subscribe/post?u=395582e416a0c357e50836500&amp;id=4a66f17d42"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate"
+        target="_blank"
+        novalidate
+      >
         <div id="mc_embed_signup_scroll">
-
-          <input type="email" value="" name="EMAIL" class="email text-field" id="mce-EMAIL" placeholder="Get the next post in your inbox" required>
+          <!-- <input type="email" value="" name="EMAIL" class="email text-field" id="mce-EMAIL" placeholder="Get the next post in your inbox" required /> -->
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_395582e416a0c357e50836500_4a66f17d42"
-              tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button subscribe-button"></div>
+          <div style="position: absolute; left: -5000px" aria-hidden="true">
+            <input type="text" name="b_395582e416a0c357e50836500_4a66f17d42" tabindex="-1" value="" />
+          </div>
+          <div class="clear">
+            <input
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="button subscribe-button rounded-lg p-2 shadow-md bg-white cursor-pointer hover:bg-orange-500 transition-all duration-100"
+            />
+          </div>
         </div>
       </form>
     </div>
