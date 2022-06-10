@@ -1,7 +1,7 @@
 export const level1: { description: string; hiddenMessage?: string }[] = [
   { description: "Back massage one a player until it's your turn again" },
   { description: 'Foot massage a player until your next turn' },
-  { description: 'Whisper to a player what you find sexy about them.' },
+  { description: 'Whisper to a player what you find sexy about them' },
   {
     description:
       'Whisper your favorite sex position in detail to a player. That player must describe it to the group using only adjectives, the rest have to guess',
@@ -29,6 +29,10 @@ export const level1: { description: string; hiddenMessage?: string }[] = [
   {
     description:
       "Until your next turn, you can't use your hands anymore. Instead one player will sit behind you, and use their hands as if they were yours.",
+  },
+  {
+    description:
+      'While you are blindfolded, you have to guess the player in front of you by their smell',
   },
   {
     description: 'On the count to 3, everybody makes a number with their hand',
@@ -70,13 +74,25 @@ export const level2: { description: string; hiddenMessage?: string }[] = [
     description:
       'While you are blindfolded, someone will smoothly tickle you. Guess who that person is',
   },
+  {
+    description:
+      'You are lucky! The boys will do a Magic Mike choreography for you',
+  },
+  {
+    description:
+      'You are lucky! The girls will dance for you the song Toxic by Britney Spears',
+  },
 ];
 
 export const level3: { description: string; hiddenMessage?: string }[] = [
   { description: 'Make out with someone for 10 seconds' },
   {
     description:
-      'While you are blindfolded, someone will kiss you. Guess who that person is.',
+      'While you are blindfolded, someone will kiss you. Guess who that person is',
+  },
+  {
+    description:
+      'While you are blindfolded, you will receive a full body massage for 2 minutes. Guess who is the player',
   },
   { description: 'Make out with 2 players at the same time' },
   { description: "Feed someone 3 M&M's from your mouth" },
@@ -85,9 +101,8 @@ export const level3: { description: string; hiddenMessage?: string }[] = [
   { description: 'Kiss someone upside down (like spiderman)' },
   {
     description:
-      'Sexily undress someone in the dark room, and dress them up again (3 min)',
+      'Without making physical contact, act out 2 sexual positions that you like with one player',
   },
-  { description: 'Act out 2 sexual positions that you like with one player' },
   {
     description:
       'On the count to 3, look to the person on your left or your right',

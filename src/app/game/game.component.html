@@ -1,7 +1,7 @@
 <p class="bg-purple-700 text-white text-sm text-right p-1">
   You can pass anytime: Simply take a drink or roll the dice
 </p>
-<div class="bg-purple-700 flex h-screen justify-center flex-col px-6 lg:px-48">
+<div class="bg-purple-700 flex h-[93vh] justify-center flex-col px-6 lg:px-48">
   <div class="flex items-center justify-between">
     <div
       class="bg-yellow-300 border-black p-6 text-2xl rounded-full text-center border-4 shadow-lg cursor-pointer hover:scale-110 transition-all duration-700"
@@ -23,7 +23,9 @@
     </div>
   </div>
 
-  <div class="text-center mt-10 lg:mt-32 text-white text-xl lg:text-4xl px-36">
+  <div
+    class="text-center mt-10 lg:mt-32 text-white text-xl lg:text-4xl md:px-36"
+  >
     <div>{{ challenge }}</div>
     <button
       *ngIf="hasHiddenMessage"
