@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { BirthdayComponent } from './birthday/birthday.component';
+import { GameComponent } from './game/game.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { BirthdayComponent } from './birthday/birthday.component';
     ProfileComponent,
     PrivacyPolicyComponent,
     BirthdayComponent,
+    GameComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +26,10 @@ import { BirthdayComponent } from './birthday/birthday.component';
       {
         path: 'privacy-policy',
         component: PrivacyPolicyComponent,
+      },
+      {
+        path: 'game',
+        component: GameComponent,
       },
       {
         path: ':name',

@@ -1,0 +1,39 @@
+<p class="bg-purple-700 text-white text-sm text-right p-1">
+  You can pass anytime: Simply take a drink or roll the dice
+</p>
+<div class="bg-purple-700 flex h-screen justify-center flex-col px-6 lg:px-48">
+  <div class="flex items-center justify-between">
+    <div
+      class="bg-yellow-300 border-black p-6 text-2xl rounded-full text-center border-4 shadow-lg cursor-pointer hover:scale-110 transition-all duration-700"
+      (click)="show(1)"
+    >
+      Level 1
+    </div>
+    <div
+      class="bg-yellow-300 border-black p-6 text-2xl rounded-full text-center border-4 shadow-lg cursor-pointer hover:scale-110 transition-all duration-700"
+      (click)="show(2)"
+    >
+      Level 2
+    </div>
+    <div
+      class="bg-yellow-300 border-black p-6 text-2xl rounded-full text-center border-4 shadow-lg cursor-pointer hover:scale-110 transition-all duration-700"
+      (click)="show(3)"
+    >
+      Level 3
+    </div>
+  </div>
+
+  <div class="text-center mt-10 lg:mt-32 text-white text-xl lg:text-4xl px-36">
+    <div>{{ challenge }}</div>
+    <button
+      *ngIf="hasHiddenMessage"
+      (click)="showHiddenMessage()"
+      class="bg-yellow-300 mt-4 lg:mt-8 border-black text-xs lg:text-sm rounded-full p-3 text-black text-center lg:border-4 shadow-lg cursor-pointer hover:scale-110 transition-all duration-700"
+    >
+      Show Challenge
+    </button>
+    <div *ngIf="shouldShowHiddenMessage" class="text-sm lg:text-2xl mt-8">
+      {{ hiddenMessage }}
+    </div>
+  </div>
+</div>
