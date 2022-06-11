@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { level1, level2, level3 } from 'src/app/game/challenges';
-import { shuffle } from 'lodash-es';
+import { shuffle, orderBy } from 'lodash-es';
 
 @Component({
   templateUrl: './game.component.html',
@@ -11,9 +11,9 @@ export class GameComponent implements OnInit {
   shouldShowHiddenMessage?: boolean;
   hiddenMessage?: string;
   hasHiddenMessage?: boolean;
-  level1 = shuffle(level1);
-  level2 = shuffle(level2);
-  level3 = shuffle(level3);
+  level1 = orderBy(shuffle(level1), 'difficulty', 'desc');
+  level2 = orderBy(shuffle(level2), 'difficulty', 'desc');
+  level3 = orderBy(shuffle(level3), 'difficulty', 'desc');
 
   constructor() {}
 
@@ -34,6 +34,15 @@ export class GameComponent implements OnInit {
         break;
     }
     const challenge = poolOfChallenges?.pop();
+    // if (this.level1.length === 0) {
+    //   this.level1 = shuffle(level2);
+    // }
+    // if (this.level2.length === 0) {
+    //   this.level2 = shuffle(level3);
+    // }
+    // if (this.level3.length === 0) {
+    //   this.level3 = shuffle(level3);
+    // }
     this.challenge = challenge?.description;
     this.hasHiddenMessage = !!challenge?.hiddenMessage;
     this.hiddenMessage = challenge?.hiddenMessage;
