@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --host 0.0.0.0",
-    "build": "ng build && cpy 'docs/index.html' '.' --rename=404.html && cpy 'CNAME' 'docs'",
+    "build": "ng build --base-href='https://jdjuan.github.io/juan/' && cpy 'docs/index.html' '.' --rename=404.html && cpy 'CNAME' 'docs'",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
